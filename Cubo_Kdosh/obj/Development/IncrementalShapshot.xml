@@ -1,0 +1,89 @@
+﻿<DeploymentSnapshot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Target>
+    <Database>Cubo_Kdosh</Database>
+    <Server>localhost</Server>
+    <ConnectionString>Data Source=localhost;Timeout=0</ConnectionString>
+  </Target>
+  <Options>
+    <TransactionalDeployment>false</TransactionalDeployment>
+    <PartitionDeployment>DeployPartitions</PartitionDeployment>
+    <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
+    <ProcessingOption>DoNotProcess</ProcessingOption>
+    <OutputScript></OutputScript>
+    <ImpactAnalysisFile></ImpactAnalysisFile>
+    <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
+    <OptimizationSettingsDeployment>Deploy</OptimizationSettingsDeployment>
+    <WriteBackTableCreation>UseExisting</WriteBackTableCreation>
+  </Options>
+  <Snapshot>
+    <ObjectSnapshots>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
+        <TimeStamp>YNE8h/o6Yw0+oI2adnkQkSk67yw=06/10/2019 17:50:2806/10/2019 17:50:27</TimeStamp>
+        <ID>
+          <String>KDOSH DM</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>DdSVDqfY0BNUc3+3+OcP18kYZac=06/10/2019 17:50:4706/10/2019 17:50:46</TimeStamp>
+        <ID>
+          <String>KDOSH DM</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>c4WoKrApWvB5N+e+Z3PT1+98NM8=06/10/2019 17:53:0506/10/2019 17:51:18</TimeStamp>
+        <ID>
+          <String>D CLIENTE</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>HptQalCR1QhBJXIma99smoI9MEQ=06/10/2019 17:52:5606/10/2019 17:52:55</TimeStamp>
+        <ID>
+          <String>Dim_FECHA</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>1S3jwojbJltJofEB1xpQpCGAmJE=06/10/2019 17:56:0906/10/2019 17:56:09</TimeStamp>
+        <ID>
+          <String>Dim_HORA</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>qNodg63xfHMe4EdBE68CdTdmvY4=06/10/2019 18:06:2506/10/2019 17:56:41</TimeStamp>
+        <ID>
+          <String>D PRODUCTO</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>96NMGhiVMvGpzmbhMuoQQpG9VFw=06/10/2019 17:57:4506/10/2019 17:57:45</TimeStamp>
+        <ID>
+          <String>Dim_PROVEEDOR</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>ZDOVS4yILZbLrRgdHxtoV5hdONE=06/10/2019 17:58:1206/10/2019 17:58:12xZh6r1Q/874G0ZpybNuLqpnDX8U=06/10/2019 17:58:1206/10/2019 17:58:12</TimeStamp>
+        <ID>
+          <String>KDOSH DM</String>
+        </ID>
+      </ObjectSnapshot>
+    </ObjectSnapshots>
+    <DatabaseSnapshot>
+      <Type>Microsoft.AnalysisServices.Database</Type>
+      <TimeStamp>Eq20QCy6XDz7tf734eUpB10Fqq4=06/10/2019 17:49:5106/10/2019 17:49:51</TimeStamp>
+      <ID>
+        <String>Cubo_Kdosh</String>
+      </ID>
+    </DatabaseSnapshot>
+    <Granularity>Coarse</Granularity>
+  </Snapshot>
+  <AssemblyLocations />
+  <ProcessingComplete>true</ProcessingComplete>
+  <LastDeployed>2019-10-06T23:06:28.546667Z</LastDeployed>
+</DeploymentSnapshot>

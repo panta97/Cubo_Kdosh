@@ -1,0 +1,560 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="9177cd06-5238-4e69-b98e-759c6fd75ad6" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Dim_HORA</ID>
+  <Name>Dim_HORA</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="fa651a0c-ab7b-40cc-8ee8-1827ef730c30">
+    <DataSourceViewID>KDOSH DM</DataSourceViewID>
+  </Source>
+  <UnknownMember>Visible</UnknownMember>
+  <ErrorConfiguration dwd:design-time-name="568169d3-e478-41ef-973d-7f3ea9fab68d">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="f178b33e-2ad4-425a-a541-85a07f36e4df">
+      <ID>FullTimeString24</ID>
+      <Name>FullTimeString24</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="1111ac2b-131e-463b-9571-746de533818a">
+          <NullProcessing>UnknownMember</NullProcessing>
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f6c96c41-7222-49fc-b32b-7671a4c077cc">
+            <TableID>dbo_D_HORA</TableID>
+            <ColumnID>SK_HORA</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="bf0fb67f-c1df-4ef9-8acb-6b24c9572dbf">
+        <DataType>WChar</DataType>
+        <DataSize>8</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="da16d907-eecc-459f-bf7f-7215422c27e3">
+          <TableID>dbo_D_HORA</TableID>
+          <ColumnID>FullTimeString24</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="2e0cf7df-7180-46fb-9ee4-d24f063234eb">
+          <AttributeID>Hour24</AttributeID>
+          <Name>Hour24</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="9575b799-658f-4d67-b57e-5b1e9b5a248e">
+          <AttributeID>Hour24 Short String</AttributeID>
+          <Name>Hour24 Short String</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="fb30cd79-5580-4318-846e-01b1bb08376a">
+          <AttributeID>Hour24 Min String</AttributeID>
+          <Name>Hour24 Min String</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="158c55d7-eecf-4c30-af24-45a8cbfc35f6">
+          <AttributeID>Hour24 Full String</AttributeID>
+          <Name>Hour24 Full String</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="41eb0e5b-0175-4b66-9496-587eac8377ca">
+          <AttributeID>Hour12</AttributeID>
+          <Name>Hour12</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="0f565f31-5332-4496-8064-3fd2aca7b107">
+          <AttributeID>Hour12 Short String</AttributeID>
+          <Name>Hour12 Short String</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="78eebc99-69d9-48ba-b4d9-d52a2264173d">
+          <AttributeID>Hour12 Min String</AttributeID>
+          <Name>Hour12 Min String</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="e5b7cc79-db1c-43c5-946c-3225fbd4e097">
+          <AttributeID>Hour12 Full String</AttributeID>
+          <Name>Hour12 Full String</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="06221b07-d78e-46c8-94b6-8b14328f2607">
+          <AttributeID>Am Pm Code</AttributeID>
+          <Name>Am Pm Code</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="d3922351-a679-4e54-83b2-151e3073b9e8">
+          <AttributeID>Am Pm String</AttributeID>
+          <Name>Am Pm String</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="c18c74c0-61ef-4a43-a40c-016a3ec2452f">
+          <AttributeID>Minute</AttributeID>
+          <Name>Minute</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="1de4f6d6-6d33-48bc-b32c-2771c3e50d70">
+          <AttributeID>Minute Code</AttributeID>
+          <Name>Minute Code</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="93783424-2c64-45e4-87cd-4457b14ecb07">
+          <AttributeID>Minute Short String</AttributeID>
+          <Name>Minute Short String</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="c622f7c7-fa13-43a1-bc50-e605005e3281">
+          <AttributeID>Minute Full String24</AttributeID>
+          <Name>Minute Full String24</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="163e97b0-382b-447a-bf82-147f177cbc0e">
+          <AttributeID>Minute Full String12</AttributeID>
+          <Name>Minute Full String12</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="f9a80a32-2c4a-4923-bbf4-7da39e89876f">
+          <AttributeID>Half Hour</AttributeID>
+          <Name>Half Hour</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="91c94ff9-abd7-447c-ac79-ed12bf51b2e6">
+          <AttributeID>Half Hour Code</AttributeID>
+          <Name>Half Hour Code</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="3aa69d2d-04ae-428b-a953-85d7b7c95880">
+          <AttributeID>Half Hour Short String</AttributeID>
+          <Name>Half Hour Short String</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="517c8080-0464-4454-8a20-2b4709354840">
+          <AttributeID>Half Hour Full String24</AttributeID>
+          <Name>Half Hour Full String24</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="7b46a92a-86ce-4011-9b3c-1637d53af9a0">
+          <AttributeID>Half Hour Full String12</AttributeID>
+          <Name>Half Hour Full String12</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="7a6a62f4-b177-4d17-a0c6-23df7317535a">
+          <AttributeID>Second</AttributeID>
+          <Name>Second</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="0ec227b7-016c-4e1a-9610-7d5d1ff1db9e">
+          <AttributeID>Second Short String</AttributeID>
+          <Name>Second Short String</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="375cebab-54ea-4774-b594-052452c9f908">
+          <AttributeID>Full Time String12</AttributeID>
+          <Name>Full Time String12</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="3f87bf5f-f72e-4356-ab10-8d8e40406604">
+      <ID>Hour24</ID>
+      <Name>Hour24</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="f77327db-21d5-42fb-af76-8497ce64751d">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a8cea06f-de56-4b10-a97b-76b3a5eb78bc">
+            <TableID>dbo_D_HORA</TableID>
+            <ColumnID>Hour24</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="937cf59c-aea4-480a-88ea-ec0049947495">
+      <ID>Hour24 Short String</ID>
+      <Name>Hour24 Short String</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="eaddf486-d3fb-4b2a-a5cd-15bfe37dbf89">
+          <DataType>WChar</DataType>
+          <DataSize>2</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c19012d8-1b2a-425f-8b39-8575471c787f">
+            <TableID>dbo_D_HORA</TableID>
+            <ColumnID>Hour24ShortString</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="15ac4d51-2030-4e3c-9421-a7fff024a2cc">
+      <ID>Hour24 Min String</ID>
+      <Name>Hour24 Min String</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="e35ebdc1-a738-4bdc-a46b-60cadf27e69a">
+          <DataType>WChar</DataType>
+          <DataSize>5</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="dbdf22fe-06a0-40ae-b459-a042137a26a7">
+            <TableID>dbo_D_HORA</TableID>
+            <ColumnID>Hour24MinString</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="ec68fb34-a901-499c-81ba-e5f48b97e728">
+      <ID>Hour24 Full String</ID>
+      <Name>Hour24 Full String</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="5d1112db-89e4-4ff7-a204-69d0d1117a35">
+          <DataType>WChar</DataType>
+          <DataSize>8</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="592a7b2b-e001-4ef1-b4b6-4def719eab4d">
+            <TableID>dbo_D_HORA</TableID>
+            <ColumnID>Hour24FullString</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="e305d8ca-ce65-4161-9095-2a44c450ffbb">
+      <ID>Hour12</ID>
+      <Name>Hour12</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="eab19692-b95b-4bab-adff-1d58f18123ac">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="6cabb74b-d106-4975-ba11-a76e18060048">
+            <TableID>dbo_D_HORA</TableID>
+            <ColumnID>Hour12</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="ff006045-a0cc-4e61-ac9c-f289f56154d4">
+      <ID>Hour12 Short String</ID>
+      <Name>Hour12 Short String</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="e629260c-cb35-4147-9f3d-66fd0f090ec6">
+          <DataType>WChar</DataType>
+          <DataSize>2</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="dfcf3b64-b41f-4a33-92fb-f8c99aab2865">
+            <TableID>dbo_D_HORA</TableID>
+            <ColumnID>Hour12ShortString</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="4385be93-e040-46e3-ae00-6b4cd322f4cd">
+      <ID>Hour12 Min String</ID>
+      <Name>Hour12 Min String</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="63b00b59-f4d9-456d-9540-5291a241221b">
+          <DataType>WChar</DataType>
+          <DataSize>5</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d705a50f-777c-48ac-b2a1-6181487d9768">
+            <TableID>dbo_D_HORA</TableID>
+            <ColumnID>Hour12MinString</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="e12f91a7-23ce-4e94-9bdc-065cec2b1780">
+      <ID>Hour12 Full String</ID>
+      <Name>Hour12 Full String</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="a1051e24-4d1c-481e-ad2c-99896c435b1a">
+          <DataType>WChar</DataType>
+          <DataSize>8</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d0e8c2bc-385f-4fc9-b27a-77876def5fd0">
+            <TableID>dbo_D_HORA</TableID>
+            <ColumnID>Hour12FullString</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="fd1eebe2-1f9a-45a4-8394-13935bb11674">
+      <ID>Am Pm Code</ID>
+      <Name>Am Pm Code</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="fef00dc2-29c3-418d-bd33-fc7dbf990ef8">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="24c7de6a-e75c-4661-b1f1-67dcd9936a6b">
+            <TableID>dbo_D_HORA</TableID>
+            <ColumnID>AmPmCode</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="6f0efd28-9168-4d45-a9c6-cd92c383ac12">
+      <ID>Am Pm String</ID>
+      <Name>Am Pm String</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="f3b2d3b7-360b-46cb-b969-f2f092fbc634">
+          <DataType>WChar</DataType>
+          <DataSize>2</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b1d65766-14aa-45c4-8e1b-14d52062caf7">
+            <TableID>dbo_D_HORA</TableID>
+            <ColumnID>AmPmString</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="b86170bd-d0a1-41e7-b290-16cfdee1b56c">
+      <ID>Minute</ID>
+      <Name>Minute</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="ead7e8a6-ce6c-4087-96b8-37327e196d4a">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="05a38d7e-3ec3-4e51-ae6e-7eb65acb279d">
+            <TableID>dbo_D_HORA</TableID>
+            <ColumnID>Minute</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="c3b138ea-2d84-4bb4-b134-f6fe05139648">
+      <ID>Minute Code</ID>
+      <Name>Minute Code</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="bd8b2075-8ded-4bfb-b30e-15c28d31200f">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1c7afc9e-bcd4-4a4c-b681-c1a5dac0fb9c">
+            <TableID>dbo_D_HORA</TableID>
+            <ColumnID>MinuteCode</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="93f5699b-0cd9-403d-9424-2dabf4cae245">
+      <ID>Minute Short String</ID>
+      <Name>Minute Short String</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="7abb774b-99c9-4f83-9cc6-ec3838b145da">
+          <DataType>WChar</DataType>
+          <DataSize>2</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="7adfc9c2-f15b-44ed-b437-6a4aea2d4707">
+            <TableID>dbo_D_HORA</TableID>
+            <ColumnID>MinuteShortString</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="33c3c309-bcb0-484a-81fe-9e573709491d">
+      <ID>Minute Full String24</ID>
+      <Name>Minute Full String24</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="d0f90211-90bc-4886-afac-fd1828a1e11d">
+          <DataType>WChar</DataType>
+          <DataSize>8</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="027c71f9-5b11-4424-a4b2-f5e42083de11">
+            <TableID>dbo_D_HORA</TableID>
+            <ColumnID>MinuteFullString24</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="84333658-1abc-4847-ad98-ea1edd15d7a2">
+      <ID>Minute Full String12</ID>
+      <Name>Minute Full String12</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="9c8daaae-da8b-42f4-813c-a440a674c2b2">
+          <DataType>WChar</DataType>
+          <DataSize>8</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="dffaafe8-89e9-48e2-bce6-7a33535c0555">
+            <TableID>dbo_D_HORA</TableID>
+            <ColumnID>MinuteFullString12</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="e15117db-2c48-4a89-94b2-74e2479791c8">
+      <ID>Half Hour</ID>
+      <Name>Half Hour</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="b4afb6ab-ccb4-41b9-af46-3a1d45ea049d">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="213898f6-8493-43c6-a5f1-42d2eb231f24">
+            <TableID>dbo_D_HORA</TableID>
+            <ColumnID>HalfHour</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="22965321-b9e4-424c-b45e-4f9338c3dbfb">
+      <ID>Half Hour Code</ID>
+      <Name>Half Hour Code</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="ba8774c5-f409-45a6-bc80-70718870a6ba">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="13688b96-26f2-40d8-9620-63789d7d9fde">
+            <TableID>dbo_D_HORA</TableID>
+            <ColumnID>HalfHourCode</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="bdeba821-aeb3-471d-ad2b-687fd4d8bbd8">
+      <ID>Half Hour Short String</ID>
+      <Name>Half Hour Short String</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="bf3bb0fc-0fee-47b5-bc1c-2b1f7af7a5fd">
+          <DataType>WChar</DataType>
+          <DataSize>2</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="6f43462a-9167-4f24-aec4-1334b5ac6a5e">
+            <TableID>dbo_D_HORA</TableID>
+            <ColumnID>HalfHourShortString</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="7f3525a5-6e58-4979-8a6a-1b50f91dad69">
+      <ID>Half Hour Full String24</ID>
+      <Name>Half Hour Full String24</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="e113fc46-abe6-4779-b02a-b273098e3e63">
+          <DataType>WChar</DataType>
+          <DataSize>8</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ee696560-41e2-4cbb-9cb3-a7b01c027019">
+            <TableID>dbo_D_HORA</TableID>
+            <ColumnID>HalfHourFullString24</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="c41f7830-38ca-4d9b-b1e7-281be2713ff1">
+      <ID>Half Hour Full String12</ID>
+      <Name>Half Hour Full String12</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="e1a0f083-f095-40be-853c-57d5b3e6aacc">
+          <DataType>WChar</DataType>
+          <DataSize>8</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="8eba0eee-7dc8-4910-80fb-022ed7e200e4">
+            <TableID>dbo_D_HORA</TableID>
+            <ColumnID>HalfHourFullString12</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="ced42864-37fb-435c-a04c-a2ca846bcaa8">
+      <ID>Second</ID>
+      <Name>Second</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="e8794b54-270d-4a17-a192-66e328bbd8c3">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b869920d-37b5-40d5-8f7f-f71f3e8df77b">
+            <TableID>dbo_D_HORA</TableID>
+            <ColumnID>Second</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="697fd5a6-957c-4c08-9c31-ce3657fd35a5">
+      <ID>Second Short String</ID>
+      <Name>Second Short String</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="72fc38bf-5703-4e07-9118-c3acb0637a46">
+          <DataType>WChar</DataType>
+          <DataSize>2</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="51419ff8-b965-4522-8d8a-b6f7c100e0c5">
+            <TableID>dbo_D_HORA</TableID>
+            <ColumnID>SecondShortString</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="027045d1-9913-46da-85b7-c62540ad2249">
+      <ID>Full Time String12</ID>
+      <Name>Full Time String12</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="27c16bef-2cde-4d93-8e6d-56c92004e2f3">
+          <DataType>WChar</DataType>
+          <DataSize>8</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b474ec07-7d86-44c8-97fb-7c287b0305dc">
+            <TableID>dbo_D_HORA</TableID>
+            <ColumnID>FullTimeString12</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>
